@@ -31,6 +31,10 @@ header{
     border-radius: 100%;
 }
 
+.ProfilPicture:hover{
+    box-shadow: 0 0 10px #8949f3;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
 }
@@ -95,7 +99,22 @@ section {
     display: inline-block;
 }
 
+/*############################################################*/
+/*######################### HEADER ###########################*/
+/*############################################################*/
 
+header button {
+    background-color: transparent;
+    border: none;
+}
+
+#sun {
+    display: block;
+}
+
+#moon {
+    display: none;
+}
 
 /*############################################################*/
 /*##################### Section About ########################*/
@@ -273,6 +292,97 @@ button.sectionAboutButton{
 }
 
 /*############################################################*/
+/*################# SECTION PROJETS CESI #####################*/
+/*############################################################*/
+
+#ProjetsCesi {
+    background-color: #00b4d858;
+}
+
+#ProjetsCesiC{
+    background-color: #0077b6;
+}
+
+.boxeCesiProjet {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#poo {
+    background-color: #1211245f;
+}
+
+#stageo {
+    background-color: #ae5fcd18;
+}
+
+#easySave {
+    background-color: #0278ff1c;
+}
+
+#arduino {
+    background-color: #18939c1e;
+}
+
+#siren {
+    background-color: #05b5a32b;
+}
+
+.titleEasySaveProject:hover {
+    color: #0279ff;
+}
+
+.titleArduinoProject:hover {
+    color: #18949c;
+}
+
+.titleInetumProject:hover {
+    color: #05b5a3;
+}
+
+.ContentBoxCesiProjet {
+    display: inline-block;
+    width: auto;
+    margin-left: 10px;
+}
+
+.ContentBoxCesiProjet h3 {
+    margin: 0;
+}
+
+.ContentBoxCesiProjet a {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.titlePooProject:hover {
+    color: #95f2f5;
+}
+
+.titleStageoProject:hover {
+    color: #ae5fcd;
+}
+
+.ContentBoxCesiProjet p {
+    margin: 0;
+}
+
+.boxeCesiProjet img {
+    width : 15%;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.boxeCesiProjet h4 {
+    margin: 0;
+    font-weight: lighter;
+}
+
+/*############################################################*/
 /*################## SECTION PARCOURS ########################*/
 /*############################################################*/
 
@@ -337,6 +447,8 @@ button.sectionAboutButton{
 }
 
 .boxeXp{
+    display: flex;
+    align-items: center;
     border-radius: 15px;
     width: 92%;
     overflow: hidden;
@@ -366,6 +478,7 @@ button.sectionAboutButton{
 .ContentXp {
     display: inline-block;
     width: 70%;
+    margin-left: 10px;
 }
 
 .ContentXp h3 {
@@ -435,8 +548,12 @@ button.sectionAboutButton{
     border-radius: 5px;
 }
 
-.ReseauSociauxHobbies a:hover {
-    color: #4cc9f0;
+.hobbiesContent a {
+    font-weight: 500;
+}
+
+.hobbiesContent a:hover {
+    font-weight: bold;
 }
 
 #guitare {
@@ -454,7 +571,6 @@ button.sectionAboutButton{
 #parkour {
     background-color: #4896ef4e;
 }
-
 
 /*############################################################*/
 /*################### Section Responsive #####################*/
@@ -501,7 +617,7 @@ button.sectionAboutButton{
         margin-left: 5vw;
     }
     .LineBoxParcours{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     #sectionParcours {
         padding-left: 0;
@@ -534,6 +650,7 @@ button.sectionAboutButton{
     }
 
     .boxeXp {
+        display: block;
         overflow: hidden;
         text-align: center;
         margin-left: auto;
@@ -551,6 +668,38 @@ button.sectionAboutButton{
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #IdSectionInformation {
+        padding-left: 5px;
+        padding-right: 15px;
+
+    }
+
+    #IdSectionCompetence {
+        padding-left: 5px;
+        padding-right: 15px;
+    }
+
+    .ProfilPicture {
+        width: 10%;
+    }
+
+    .containerAnimation::before {
+        width: 150px;
+        height: 400%;
+        top: -150%;
+        left: 40%;
+        animation: rotate 6s linear infinite;
+    }
+
+    .boxeCesiProjet {
+        display: block;
+        overflow: hidden;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
     }
 
 }

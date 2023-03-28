@@ -8,20 +8,31 @@
     <!-- POLICE DECRITURE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap" rel="stylesheet">
-
+    <!-- POLICE ICONES -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/pp-purple.webp" class="favicone">
+    <!-- Script JS -->
+    <script type="text/javascript" src="script.js"></script>
+    <title>Antonin Martinez</title>
 </head>
 <body>
     <header>
         <img class="ProfilPicture" src="./images/pp-purple.webp" alt="Profile picture">
         <nav>
-            <a class="NavHeader" href="#">linkedIn</a>
-            <a class="NavHeader" href="#">Github</a>
+            <a class="NavHeader" href="https://www.linkedin.com/in/antonin-martinez-abb949221/">linkedIn</a>
+            <a class="NavHeader" href="https://github.com/AntoninMart">Github</a>
             <a class="NavHeader" href="#">Langage</a>
         </nav>
+
+        <button id="buttonLightMode" type="button"  onclick="changeLight();">
+            <span class="material-symbols-outlined" id="sun">
+                light_mode
+            </span>
+            <span class="material-symbols-outlined" id="moon">
+                dark_mode
+            </span>
+        </button>
     </header>
 
     <!-- SECTION ABOUT (TITRE ET PRESENTATION) -->
@@ -45,7 +56,9 @@
                 </p>
             </div>
             <div>
-                <button class="sectionAboutButton" type="button">Resume</button>
+                <form method="get" action="pdf/CV_Antonin_Martinez.pdf">
+                    <button class="sectionAboutButton" type="submit">Resume</button>
+                </form>
             </div>
         </section>
     </div>
@@ -54,7 +67,7 @@
         <span class="circle" id="InformationC"></span>
         <h3 class="DivTypeSectionTitle">information&nbsp;</h3>
     </div>
-    <section>
+    <section id="IdSectionInformation">
         <div class="ContainerInformationDiv">
             <div>
                 <div class="TitleInformation", id="NameI">
@@ -103,7 +116,7 @@
         <span class="circle" id="CompetencesC"></span>
         <h3 class="DivTypeSectionTitle">compétences&nbsp;</h3>
     </div>
-    <section>
+    <section id="IdSectionCompetence">
         <div class="ContainerInformationDiv" id="ContainerCompetences">
             <h3>Programmation :</h1>
             <p>C#, C++, C, SQL, HTML / CSS, Python</p>
@@ -119,6 +132,62 @@
         <h3 class="DivTypeSectionTitle">mes projets&nbsp;</h3>
     </div>
     <section></section>
+
+    <div class="DivTypeSection" id="ProjetsCesi">
+        <span class="circle" id="ProjetsCesiC"></span>
+        <h3 class="DivTypeSectionTitle">mes projets étudiant &nbsp;</h3>
+    </div>
+    <section>
+        <div class="boxeCesiProjet", id="arduino">
+            <img src="images/arduino.webp" alt="">
+            <div class="ContentBoxCesiProjet">
+                <a href="#" class="titleArduinoProject">Projet Worldwide Weather Watcher</a>
+                <p>Projet système embarqué, Station météo en Arduino</p>
+                <h4>2021</h4>
+            </div>
+        </div>
+        <div class="boxeCesiProjet", id="poo">
+            <img src="images/projet-poo.webp" alt="">
+            <div class="ContentBoxCesiProjet">
+                <a href="https://github.com/AntoninMart/Projet-POO/tree/main/Project1" class="titlePooProject">Projet C++</a>
+                <p>Interface windows form permettant la gestion / traitement d'une base de données </p>
+                <h4>2021</h4>
+            </div>
+        </div>
+        <div class="boxeCesiProjet", id="stageo">
+            <img src="images/stageo.webp" alt="">
+            <div class="ContentBoxCesiProjet">
+                <a href="https://github.com/AntoninMart/Stageo" class="titleStageoProject">Stageo</a>
+                <p>Projet web ayant pour but de gérer des offres / candidatures de stage. <br> 
+                    framework bootstrap pour la partie front <br>
+                    HP pour la partie back 
+                </p>
+                <h4>2022</h4>
+            </div>
+        </div>
+        <div class="boxeCesiProjet", id="easySave">
+            <img src="images/cs.webp" alt="">
+            <div class="ContentBoxCesiProjet">
+                <a href="#" class="titleEasySaveProject">EasySave</a>
+                <p>Logiciel de sauvegarde(copie de fichier) réalisé en CSharp.<br> 
+                    IHM Console, IHM en WPF<br>
+                    MultiThreading des différentes sauvegardes <br>
+                </p>
+                <h4>2023</h4>
+            </div>
+        </div>
+        <div class="boxeCesiProjet", id="siren">
+            <img src="images/inetum_logo.webp" alt="">
+            <div class="ContentBoxCesiProjet">
+                <a href="#" class="titleInetumProject">Projet Siren</a>
+                <p>Logiciel permettant de récupérer / gérer / distruber les données de l'api insee siren<br> 
+                    Ajout de ma fonctionnalité dans la progiciel de l'entreprise<br>
+                    Projet réalisé avec : C#, Api Rest, VBnet, SqlServer<br>
+                </p>
+                <h4>2023</h4>
+            </div>
+        </div>
+    </section>
 
     <div class="DivTypeSection" id="Parcours">
         <span class="circle" id="ParcoursC"></span>
@@ -217,10 +286,7 @@
                 <div class="hobbiesContent">
                     <h3>Guitare</h3>
                     <p>depuis 7ans</p>
-                    <div class="ReseauSociauxHobbies">
-                        <span class="material-symbols-outlined">music_note</span>
-                        <a href="https://www.tiktok.com/@jefaisunpeudeguitare">@jefaisunpeudeguitare</a>
-                    </div>
+                    <a href="https://www.tiktok.com/@jefaisunpeudeguitare">@jefaisunpeudeguitare</a>
                 </div>
             </div>
             <div class="boxeHobbies", id="muscu">
