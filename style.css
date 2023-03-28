@@ -1,0 +1,575 @@
+/*############################################################*/
+/*################# STYLE ELEMT GENERIQUE ####################*/
+/*############################################################*/
+
+* {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    background-color: #191919;
+    margin: 0;
+}
+
+header{
+    padding: 2%;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    /* background: linear-gradient(70deg, #595959, #f2f2f2); */
+    background-color: #272727;
+}
+
+.NavHeader:hover{
+    color: #f72585;
+    /* text-shadow: 0 0 10px #fff; */
+}
+
+.ProfilPicture {
+    width: 5%;
+    border-radius: 100%;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+header a {
+    color:#fff;
+    font-weight: 900;
+    font-size: large;
+}
+
+section {
+    background-color: #202020;
+    padding: 50px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    border-radius: 20px;
+    min-height: 50px;
+}
+
+.DivTypeSection{
+    /* padding-bottom: 0; */
+    padding-top: 3px;
+    padding-left: 5px;
+    border-radius: 20px;
+    width: fit-content;
+    height: 30px;
+    overflow: hidden;
+    margin-left: 25vw;
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+
+.circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+
+/*############################################################*/
+/*##################### Section About ########################*/
+/*############################################################*/
+
+#IdAbout {
+    padding: 45px;
+    margin: 2px;
+    max-width: 90%;
+    z-index: 1;
+}
+
+.contentSectionAbout {
+    white-space: normal;
+}
+
+.containerAnimation {
+    padding: 5px;
+    padding-right: 5px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.containerAnimation::before{
+    content: '';
+    width: 1000px;
+    height: 300%;
+    /* background-color: white; */
+    background: linear-gradient(to bottom right, blue, pink);
+    position: absolute;
+    top: -100%;
+    left: -10%; 
+    z-index: -1;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#About{
+    background-color: #564328;
+}
+
+
+#AboutC{
+    background-color: #c1954c;
+}
+
+h3.DivTypeSectionTitle {
+    margin : 0;
+    display: inline-block;    
+}
+
+h1.SectionAbouTitle{
+  /* color: #4e74b0; */
+  color: #fff;
+  margin: 0;
+}
+
+h2.SectionAbouTitle{
+  /* color: #42733a;   */
+  color: #fff;
+  margin-top: 0;
+}
+
+button.sectionAboutButton{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    width: 30%;
+    height: 40px;
+    margin-top: 2vh
+}
+
+
+.sectionAboutButton:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/*############################################################*/
+/*################## SECTION INFORMATION #####################*/
+/*############################################################*/
+
+#Information{
+    background-color: #274974;
+}
+
+#InformationC{
+    background-color: #2d7cd2;
+}
+
+.ContainerInformationDiv{
+    background-color: #2d2d2d;
+    border-radius: 15px;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.TitleInformation h3 {
+    margin: 0;
+}
+
+.TitleInformation{
+    width: fit-content;
+    display: inline-block; 
+    /* height: 30px; */
+    overflow: hidden;
+}
+
+.Content p {
+    margin: 0;
+}
+
+.Content{
+    display: inline-block;
+    width: fit-content;
+    overflow: hidden;
+}
+
+#NameI{
+    background-color: #522e2a;
+}
+#AgeI{
+    background-color: #5c3b23;
+}
+#LieuI{
+    background-color: #243d30;
+}
+#ContactI{
+    background-color: #8c5bc166;
+}
+
+/*############################################################*/
+/*################## SECTION COMPETENCES #####################*/
+/*############################################################*/
+
+#Competences {
+    background-color: #6e3630;
+}
+
+#CompetencesC{
+    background-color: #cd4945;
+}
+
+#ContainerCompetences h3 {
+    margin: 0;
+}
+
+#ContainerCompetences p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/*############################################################*/
+/*################## SECTION PROJETS #########################*/
+/*############################################################*/
+
+#Projets {
+    background-color: #492f64;
+}
+
+#ProjetsC{
+    background-color: #8d5bc1;
+}
+
+/*############################################################*/
+/*################## SECTION PARCOURS ########################*/
+/*############################################################*/
+
+#Parcours{
+    background-color: #854c1d;
+}
+
+#ParcoursC{
+    background-color: #d87620;
+}
+
+.LineBoxParcours{
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.boxeParcours{
+    border-radius: 15px;
+    width: 15vw;
+    height: 30vh;
+    min-height: 200px;
+    margin : 5px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+}
+
+.boxeParcoursImg{
+    margin: 0;
+    width: 45%;
+    border-radius: 5px;
+}
+
+#Cesi{
+    background-color: #392e1e;
+}
+
+#Prepa{
+    background-color: #302228;
+}
+    
+#Inetum{
+    background-color: #2a1e2a;
+}
+
+#Lycee{
+    background-color: #1e2a2a;
+}
+
+
+/*############################################################*/
+/*################### Section Experience #####################*/
+/*############################################################*/
+
+#Experience{
+    background-color: #2b593f;
+}
+
+#ExperienceC{
+    background-color: #2d9662;
+}
+
+.boxeXp{
+    border-radius: 15px;
+    width: 92%;
+    overflow: hidden;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#inetumXp{
+    background-color: #05b5a32a;
+}
+
+#inetumStageXp{
+    background-color: #1f2e4465;
+}
+
+#VendangeBeaudoin{
+    background-color: #b4b1881c;
+}
+
+.boxeXpImg{
+    margin: 0;
+    width: 20%;
+    border-radius: 5px;
+    display: inline-block
+}
+
+.ContentXp {
+    display: inline-block;
+    width: 70%;
+}
+
+.ContentXp h3 {
+    margin: 0;
+}
+
+.ContentXp h4 {
+    margin: 0;
+}
+
+.ContentXp p {
+    margin: 0;
+}
+
+#CuveeNoire{
+    background-color: #ffffff;
+}
+
+#CuveeNoireXp{
+    background-color: #001a9e4a;
+}
+
+#PierreTrichetXp{
+    background-color: #791d2957;
+}
+
+/*############################################################*/
+/*################### Section Hobbies ########################*/
+/*############################################################*/
+
+#Hobbies {
+    background-color: #8c1f2f;
+}
+
+#HobbiesC{
+    background-color: #c6112f;
+}
+
+.LineBoxHobbies{
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.boxeHobbies{
+    border-radius: 15px;
+    width: 15vw;
+    height: 25vh;
+    min-height: 200px;
+    margin: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+}
+
+.boxeHobbies h3 {
+    margin: 0;
+}
+
+.boxeHobbies p {
+    margin: 0;
+}
+
+.boxeHobbiesImg{
+    margin: 0;
+    width: 45%;
+    border-radius: 5px;
+}
+
+.ReseauSociauxHobbies a:hover {
+    color: #4cc9f0;
+}
+
+#guitare {
+    background-color: #c6112f39;
+}
+
+#muscu {
+    background-color: #81a01347;
+}
+
+#boxefrancaise {
+    background-color: #7109b75b;
+}
+
+#parkour {
+    background-color: #4896ef4e;
+}
+
+
+/*############################################################*/
+/*################### Section Responsive #####################*/
+/*############################################################*/
+
+@media screen and (max-width: 428px) {
+    button.sectionAboutButton{
+        width: 100%;
+    }
+
+    .ProfilPicture {
+        width: 15%;
+    }
+
+    header {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 472px) {
+    .containerAnimation::before {
+        width: 150px;
+        height: 400%;
+        top: -150%;
+        left: 40%;
+        animation: rotate 6s linear infinite;
+    }
+}
+
+@media screen and (max-width: 1068px) {
+    section {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .DivTypeSection {
+        margin-left: 5vw;
+    }
+    .containerAnimation {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    
+    .DivTypeSection {
+        margin-left: 5vw;
+    }
+    .LineBoxParcours{
+        flex-direction: column;
+    }
+    #sectionParcours {
+        padding-left: 0;
+    }
+    .boxeParcours{
+        width: 100%;
+        height: 15vh;
+        display: inline-block;
+        margin-left: 0px;
+    }
+    .boxeParcoursImg{
+        margin: 0;
+        width: 20%;
+        border-radius: 5px;
+    }
+    .LineBoxHobbies{
+        flex-direction: column;
+    }
+
+    .boxeHobbies {
+        width: 100%;
+        height: 15vh;
+        display: inline-block;
+        margin-left: 0px;
+        height: fit-content;
+    }
+
+    #idSectionHobbies {
+        padding-left: 0;
+    }
+
+    .boxeXp {
+        overflow: hidden;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+
+    .boxeXpImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+    .ContentXp {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+@media screen and (min-width: 1790px) {
+    .containerAnimation::before {
+        width: 150px;
+        height: 400%;
+        top: -150%;
+        left: 40%;
+        animation: rotate 6s linear infinite;
+    }
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #fff;
+}
