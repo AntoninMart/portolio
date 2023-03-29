@@ -53,20 +53,20 @@ button.sectionAboutButton{
 }
 
 .ContainerInformationDiv{
-    background-color: #b9b9b9;
+    background-color: #fff;
 }
 
 #NameI{
-    background-color: #522e2a;
+    background-color: #fdebec;
 }
 #AgeI{
-    background-color: #5c3b23;
+    background-color: #fbecdd;
 }
 #LieuI{
-    background-color: #243d30;
+    background-color: #edf3ec;
 }
 #ContactI{
-    background-color: #8c5bc166;
+    background-color: #f6f3f9;
 }
 
 #Competences {
@@ -86,7 +86,7 @@ button.sectionAboutButton{
 }
 
 #ProjetsCesi {
-    background-color: #00b4d858;
+    background-color: #00b4d872;
 }
 
 #ProjetsCesiC{
@@ -94,7 +94,7 @@ button.sectionAboutButton{
 }
 
 #poo {
-    background-color: #1211245f;
+    background-color: #1211242d;
 }
 
 #stageo {
@@ -142,19 +142,19 @@ button.sectionAboutButton{
 }
 
 #Cesi{
-    background-color: #392e1e;
+    background-color: #fbf3db;
 }
 
 #Prepa{
-    background-color: #302228;
+    background-color: #dfcad3;
 }
     
 #Inetum{
-    background-color: #2a1e2a;
+    background-color: #d9eef8;
 }
 
 #Lycee{
-    background-color: #1e2a2a;
+    background-color: #d0decd;
 }
 
 #Experience{
