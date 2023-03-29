@@ -10,6 +10,14 @@ header{
     background-color: #f1f1ef;
 }
 
+#CVdark {
+    display: none;
+}
+
+#CVlight {
+    display: block;
+}
+
 .NavHeader:hover{
     color: #f72585;
 }

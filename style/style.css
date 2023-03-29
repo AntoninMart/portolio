@@ -93,6 +93,14 @@ section {
     display: inline-block;
 }
 
+#CVdark {
+    display: none;
+}
+
+#CVlight {
+    display: none;
+}
+
 #LangageNavBar {
     display: none;
 }

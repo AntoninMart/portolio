@@ -10,6 +10,14 @@ header{
     background-color: #272727;
 }
 
+#CVlight {
+    display: none;
+}
+
+#CVdark {
+    display: block;
+}
+
 .DivTypeSection h3 {
     color: #fff;
 } 
