@@ -1,0 +1,222 @@
+* {
+    color: #000;
+}
+
+body {
+    background-color: #fff
+}
+
+header{
+    background-color: #f1f1ef;
+}
+
+.NavHeader:hover{
+    color: #f72585;
+}
+
+.ProfilPicture:hover{
+    box-shadow: 0 0 10px #8949f3;
+}
+
+section {
+    background-color: #f1f1ef;
+}
+
+#About{
+    background-color: #564328;
+}
+
+
+#AboutC{
+    background-color: #c1954c;
+}
+
+button.sectionAboutButton{
+    border: 1px solid #000;
+}
+
+.sectionAboutButton:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.DivTypeSection h3 {
+    color: #fff;
+}  
+
+#Information{
+    background-color: #274974;
+}
+
+#InformationC{
+    background-color: #2d7cd2;
+}
+
+.ContainerInformationDiv{
+    background-color: #b9b9b9;
+}
+
+#NameI{
+    background-color: #522e2a;
+}
+#AgeI{
+    background-color: #5c3b23;
+}
+#LieuI{
+    background-color: #243d30;
+}
+#ContactI{
+    background-color: #8c5bc166;
+}
+
+#Competences {
+    background-color: #6e3630;
+}
+
+#CompetencesC{
+    background-color: #cd4945;
+}
+
+#Projets {
+    background-color: #492f64;
+}
+
+#ProjetsC{
+    background-color: #8d5bc1;
+}
+
+#ProjetsCesi {
+    background-color: #00b4d858;
+}
+
+#ProjetsCesiC{
+    background-color: #0077b6;
+}
+
+#poo {
+    background-color: #1211245f;
+}
+
+#stageo {
+    background-color: #ae5fcd18;
+}
+
+#easySave {
+    background-color: #0278ff1c;
+}
+
+#arduino {
+    background-color: #18939c1e;
+}
+
+#siren {
+    background-color: #05b5a32b;
+}
+
+.titleEasySaveProject:hover {
+    color: #0279ff;
+}
+
+.titleArduinoProject:hover {
+    color: #18949c;
+}
+
+.titleInetumProject:hover {
+    color: #05b5a3;
+}
+
+.titlePooProject:hover {
+    color: #95f2f5;
+}
+
+.titleStageoProject:hover {
+    color: #ae5fcd;
+}
+
+#Parcours{
+    background-color: #854c1d;
+}
+
+#ParcoursC{
+    background-color: #d87620;
+}
+
+#Cesi{
+    background-color: #392e1e;
+}
+
+#Prepa{
+    background-color: #302228;
+}
+    
+#Inetum{
+    background-color: #2a1e2a;
+}
+
+#Lycee{
+    background-color: #1e2a2a;
+}
+
+#Experience{
+    background-color: #2b593f;
+}
+
+#ExperienceC{
+    background-color: #2d9662;
+}
+
+#inetumXp{
+    background-color: #05b5a32a;
+}
+
+#inetumStageXp{
+    background-color: #1f2e4465;
+}
+
+#VendangeBeaudoin{
+    background-color: #b4b1881c;
+}
+
+#CuveeNoire{
+    background-color: #ffffff;
+}
+
+#CuveeNoireXp{
+    background-color: #001a9e4a;
+}
+
+#PierreTrichetXp{
+    background-color: #791d2957;
+}
+
+#Hobbies {
+    background-color: #8c1f2f;
+}
+
+#HobbiesC{
+    background-color: #c6112f;
+}
+
+#guitare {
+    background-color: #c6112f39;
+}
+
+#muscu {
+    background-color: #81a01347;
+}
+
+#boxefrancaise {
+    background-color: #7109b75b;
+}
+
+#parkour {
+    background-color: #4896ef4e;
+}
+
+#sun {
+    display: none;
+}
+
+#moon {
+    display: block;
+}
