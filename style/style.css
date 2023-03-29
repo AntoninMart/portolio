@@ -17,9 +17,14 @@ header{
     font-family: 'Roboto', sans-serif;
 }
 
+header a {
+    transition-duration: 150ms;
+}
+
 .ProfilPicture {
     width: 5%;
     border-radius: 100%;
+    transition-duration: 300ms;
 }
 
 .ProfilPicture:hover{
@@ -47,6 +52,7 @@ h4 {
 }
 
 button {
+    transition-duration: 300ms;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
 }
@@ -85,6 +91,10 @@ section {
     width: 10px;
     border-radius: 50%;
     display: inline-block;
+}
+
+#LangageNavBar {
+    display: none;
 }
 
 /*############################################################*/
@@ -250,7 +260,7 @@ button.sectionAboutButton{
 .BoxeMyProjectImg {
     border-radius: 25px;
     width: 50%;
-    max-width: 200px;
+    max-width: 150px;
 }
 
 /*############################################################*/
@@ -279,6 +289,7 @@ button.sectionAboutButton{
 .ContentBoxCesiProjet a {
     font-weight: 900;
     font-size: 20px;
+    transition-duration: 300ms;
 }
 
 .ContentBoxCesiProjet p {
@@ -408,10 +419,6 @@ button.sectionAboutButton{
 /*############################################################*/
 /*################### Section Responsive #####################*/
 /*############################################################*/
-
-* {
-    visibility: hidden;
-}
 
 @media screen and (max-width: 428px) {
     button.sectionAboutButton{
@@ -548,6 +555,10 @@ button.sectionAboutButton{
 
     .boxeHobbiesImg {
         max-width: 100px;
+    }
+
+    .lineBoxeMyProject {
+        flex-direction: column;
     }
 
 }
