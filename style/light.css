@@ -220,3 +220,7 @@ button.sectionAboutButton{
 #moon {
     display: block;
 }
+
+.BoxMyProject {
+    background: linear-gradient(to bottom right, #f725842c, #4ccaf045);
+} 
