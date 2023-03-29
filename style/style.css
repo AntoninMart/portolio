@@ -409,6 +409,10 @@ button.sectionAboutButton{
 /*################### Section Responsive #####################*/
 /*############################################################*/
 
+* {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 428px) {
     button.sectionAboutButton{
         width: 100%;
