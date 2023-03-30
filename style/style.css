@@ -149,12 +149,13 @@ header button {
 
 .containerAnimation::before{
     content: '';
-    width: 1000px;
-    height: 300%;
+    width: 150px;
+    height: 400%;
+    top: -150%;
+    left: 40%;
     background: linear-gradient(to bottom right, blue, pink);
+    /* background: linear-gradient(-45deg, #7B2CBF, #9D4EDD, #C77DFF, #E0AAFF); */
     position: absolute;
-    top: -100%;
-    left: -10%; 
     z-index: -1;
     animation: rotate 5s linear infinite;
 }
@@ -193,6 +194,43 @@ button.sectionAboutButton{
 /*################## SECTION INFORMATION #####################*/
 /*############################################################*/
 
+#IdSectionInformation {
+    padding: 45px;
+    margin: 7px;
+    max-width: 90%;
+    z-index: 1;
+}
+
+.ContainerAnimationInformation {
+    /* padding: 5px; */
+    margin-left: 25vw;
+    margin-right: 25vw;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ContainerAnimationInformation::before {
+    content: '';
+    height: 100%;
+    width: 200%;
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(-45deg, #7400b8, #6930c3, #5e60ce, #5390D9, #4EA8DE, #72EFDD, #80FFDB);
+    animation: slidein 4s ease infinite;
+}
+
+@keyframes slidein {
+    0% {
+		left: 0% ;
+	}
+	50% {
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+    }
+  }
 .ContainerInformationDiv{
     /* background-color: #2d2d2d; */
     border-radius: 15px;
@@ -250,6 +288,7 @@ button.sectionAboutButton{
     align-items: center;
     text-align: center;
     min-height: 50px;
+    width: 50%;
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 10px;
@@ -270,6 +309,10 @@ button.sectionAboutButton{
     width: 50%;
     max-width: 150px;
 }
+
+/* .ContentBoxMyProject {
+    text-align: left;
+} */
 
 /*############################################################*/
 /*################# SECTION PROJETS CESI #####################*/
@@ -442,16 +485,6 @@ button.sectionAboutButton{
     }
 }
 
-@media screen and (max-width: 472px) {
-    .containerAnimation::before {
-        width: 150px;
-        height: 400%;
-        top: -150%;
-        left: 40%;
-        animation: rotate 6s linear infinite;
-    }
-}
-
 @media screen and (max-width: 1068px) {
     section {
         margin-left: 5vw;
@@ -463,6 +496,22 @@ button.sectionAboutButton{
     .containerAnimation {
         margin-left: 5vw;
         margin-right: 5vw;
+    }
+
+    .ContainerAnimationInformation {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    #IdSectionInformation {
+        font-size: 12px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .BoxMyProject {
+        width: 100%;
+        margin-left: -2%;
     }
     
     .DivTypeSection {
@@ -524,12 +573,6 @@ button.sectionAboutButton{
         margin-right: auto;
     }
 
-    #IdSectionInformation {
-        padding-left: 5px;
-        padding-right: 15px;
-
-    }
-
     #IdSectionCompetence {
         padding-left: 5px;
         padding-right: 15px;
@@ -537,14 +580,6 @@ button.sectionAboutButton{
 
     .ProfilPicture {
         width: 10%;
-    }
-
-    .containerAnimation::before {
-        width: 150px;
-        height: 400%;
-        top: -150%;
-        left: 40%;
-        animation: rotate 6s linear infinite;
     }
 
     .boxeCesiProjet {
@@ -569,17 +604,6 @@ button.sectionAboutButton{
         flex-direction: column;
     }
 
-}
-
-
-@media screen and (min-width: 1790px) {
-    .containerAnimation::before {
-        width: 150px;
-        height: 400%;
-        top: -150%;
-        left: 40%;
-        animation: rotate 6s linear infinite;
-    }
 }
 
 .copyright {

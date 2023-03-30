@@ -227,8 +227,17 @@ button.sectionAboutButton{
 
 #moon {
     display: block;
+    transition-duration: 300ms;
 }
 
-.BoxMyProject {
-    background: linear-gradient(to bottom right, #f725842c, #4ccaf045);
-} 
+#moon:hover {
+    text-shadow: 0 0 10px #000;
+}
+
+#dumbot {
+    background-color: #5963f443;
+}
+
+#portfolioProject {
+    background-color: #5414cb2b;
+}
