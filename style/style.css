@@ -294,6 +294,15 @@ button.sectionAboutButton{
     margin-bottom: 10px;
 }
 
+.BoxMyProject p {
+    text-align: left;
+}
+
+.BoxMyProject h4 {
+    margin-top: 0;
+    text-align: left;
+}
+
 .BoxMyProject a {
     margin: 0;
     font-weight: bold;
@@ -310,9 +319,21 @@ button.sectionAboutButton{
     max-width: 150px;
 }
 
-/* .ContentBoxMyProject {
-    text-align: left;
-} */
+#portfolioProject a {
+    transition-duration: 300ms;
+}
+
+#portfolioProject a:hover {
+    color: #1b33df;
+}
+
+#dumbot a {
+    transition-duration: 300ms;
+}
+
+#dumbot a:hover {
+    color: #5964f4;
+}
 
 /*############################################################*/
 /*################# SECTION PROJETS CESI #####################*/
@@ -486,18 +507,29 @@ button.sectionAboutButton{
 }
 
 @media screen and (max-width: 1068px) {
+
+    /*Responsive générale*/
     section {
         margin-left: 5vw;
         margin-right: 5vw;
     }
+
     .DivTypeSection {
         margin-left: 5vw;
     }
+
+    /*Responsive Header*/
+    .ProfilPicture {
+        width: 10%;
+    }
+
+    /*Responsive about me*/
     .containerAnimation {
         margin-left: 5vw;
         margin-right: 5vw;
     }
 
+    /*Responsive information*/
     .ContainerAnimationInformation {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -509,32 +541,30 @@ button.sectionAboutButton{
         padding-right: 5%;
     }
 
-    .BoxMyProject {
-        width: 100%;
-        margin-left: -2%;
-    }
-    
-    .DivTypeSection {
-        margin-left: 5vw;
-    }
+    /*Responsive Parcours*/
     .LineBoxParcours{
         flex-direction: column-reverse;
     }
+
     #sectionParcours {
         padding-left: 0;
     }
+
     .boxeParcours{
         width: 100%;
         height: 15vh;
         display: inline-block;
         margin-left: 0px;
     }
+
     .boxeParcoursImg{
         margin: 0;
         width: 20%;
         max-width: 100px;
         border-radius: 5px;
     }
+
+    /*Responsive Hobbies*/
     .LineBoxHobbies{
         flex-direction: column;
     }
@@ -551,13 +581,30 @@ button.sectionAboutButton{
         padding-left: 0;
     }
 
+    .boxeHobbiesImg {
+        max-width: 100px;
+    }
+
+    /*Responsive Experience*/
+
+    #idSectionExperience {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
     .boxeXp {
         display: block;
         overflow: hidden;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        width: auto;
         padding: 15px;
+    }
+
+    .boxeXp p {
+        text-align: left;
+        margin: 0;
     }
 
     .boxeXpImg {
@@ -573,15 +620,13 @@ button.sectionAboutButton{
         margin-right: auto;
     }
 
+    /*Responsive Competences*/
     #IdSectionCompetence {
         padding-left: 5px;
         padding-right: 15px;
     }
 
-    .ProfilPicture {
-        width: 10%;
-    }
-
+    /*Responsive Projet Cesi*/
     .boxeCesiProjet {
         display: flex;
         flex-direction: column;
@@ -592,16 +637,51 @@ button.sectionAboutButton{
         padding: 15px;
     }
 
+    .boxeCesiProjet p {
+        text-align: left;
+    }
+
+    .boxeCesiProjet h4 {
+        text-align: left;
+    }
+
     .boxeCesiProjet img {
         min-width: 70px;
     }
+    
+    #idSectionProjetCesi {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 
-    .boxeHobbiesImg {
-        max-width: 100px;
+    /*Responsive Projets*/
+    #idSectionProjet {
+        padding-left: 2%;
+        padding-right: 2%;
+        overflow: hidden;
     }
 
     .lineBoxeMyProject {
         flex-direction: column;
+    }
+
+    .BoxMyProject {
+        padding: 15px;
+        white-space: normal;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .BoxMyProject p{
+        padding : 0;
+        margin: 0;
+    }
+
+    .BoxeMyProjectImg {
+        width: 20%;
+        min-width: 70px;
     }
 
 }
